@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Olive & Ember</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="bg-stone-50 text-stone-800">
+    <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
+        <a href="/" class="text-xl font-black tracking-wide text-amber-700">Olive & Ember</a>
+        <button class="rounded border border-stone-300 px-3 py-1 md:hidden" data-menu-toggle>Menu</button>
+        <ul class="hidden items-center gap-6 text-sm font-medium md:flex">
+          <li><a class="hover:text-amber-700" href="/">Home</a></li>
+          <li><a class="text-amber-700" href="/menu">Menu</a></li>
+          <li><a class="hover:text-amber-700" href="/about">About</a></li>
+          <li><a class="hover:text-amber-700" href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hidden border-t border-stone-200 bg-white md:hidden" data-mobile-menu>
+        <a class="block px-4 py-3 font-medium" href="/">Home</a>
+        <a class="block px-4 py-3 font-medium text-amber-700" href="/menu">Menu</a>
+        <a class="block px-4 py-3 font-medium" href="/about">About</a>
+        <a class="block px-4 py-3 font-medium" href="/contact">Contact</a>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+      <h1 class="mb-2 text-4xl font-black">Our Menu</h1>
+      <p class="mb-10 text-stone-600">Inspired by your menu request, arranged into clean sections for starters, mains, and desserts.</p>
+
+      <section class="mb-12 rounded-2xl border border-stone-200 bg-white p-6 shadow-sm">
+        <h2 class="mb-6 text-2xl font-bold text-amber-700">Starters</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div><p class="flex justify-between font-semibold"><span>Burrata & Heirloom Tomato</span><span>$13</span></p><p class="text-sm text-stone-600">Creamy burrata, basil oil, toasted sourdough.</p></div>
+          <div><p class="flex justify-between font-semibold"><span>Smoky Red Pepper Soup</span><span>$9</span></p><p class="text-sm text-stone-600">Roasted peppers, garlic croutons, crème fraîche.</p></div>
+          <div><p class="flex justify-between font-semibold"><span>Crispy Calamari</span><span>$14</span></p><p class="text-sm text-stone-600">Lemon aioli, herb salad, chili flakes.</p></div>
+          <div><p class="flex justify-between font-semibold"><span>Truffle Fries</span><span>$8</span></p><p class="text-sm text-stone-600">Parmesan, parsley, black truffle salt.</p></div>
+        </div>
+      </section>
+
+      <section class="mb-12 rounded-2xl border border-stone-200 bg-white p-6 shadow-sm">
+        <h2 class="mb-6 text-2xl font-bold text-amber-700">Main Courses</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div><p class="flex justify-between font-semibold"><span>Charred Lemon Chicken</span><span>$21</span></p><p class="text-sm text-stone-600">Herb-marinated chicken, saffron rice, vegetables.</p></div>
+          <div><p class="flex justify-between font-semibold"><span>Wild Mushroom Risotto</span><span>$19</span></p><p class="text-sm text-stone-600">Arborio rice, roasted mushrooms, parmesan crisp.</p></div>
+          <div><p class="flex justify-between font-semibold"><span>Seared Seabass</span><span>$26</span></p><p class="text-sm text-stone-600">Caper butter sauce, grilled asparagus, potatoes.</p></div>
+          <div><p class="flex justify-between font-semibold"><span>Slow-Cooked Lamb Shank</span><span>$29</span></p><p class="text-sm text-stone-600">Rosemary jus, creamy polenta, root vegetables.</p></div>
+        </div>
+      </section>
+
+      <section class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm">
+        <h2 class="mb-6 text-2xl font-bold text-amber-700">Desserts & Drinks</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div><p class="flex justify-between font-semibold"><span>Vanilla Bean Crème Brûlée</span><span>$10</span></p><p class="text-sm text-stone-600">Caramelized sugar top, fresh berries.</p></div>
+          <div><p class="flex justify-between font-semibold"><span>Dark Chocolate Tart</span><span>$11</span></p><p class="text-sm text-stone-600">Sea salt ganache, whipped cream.</p></div>
+          <div><p class="flex justify-between font-semibold"><span>House Mocktail</span><span>$7</span></p><p class="text-sm text-stone-600">Seasonal citrus, basil syrup, sparkling water.</p></div>
+          <div><p class="flex justify-between font-semibold"><span>Specialty Coffee</span><span>$5</span></p><p class="text-sm text-stone-600">Locally roasted beans, espresso-based drinks.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/js/site.js"></script>
+  </body>
+</html>
