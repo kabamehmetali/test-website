@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Olive & Ember</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="bg-stone-50 text-stone-800">
+    <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
+        <a href="/" class="text-xl font-black tracking-wide text-amber-700">Olive & Ember</a>
+        <button class="rounded border border-stone-300 px-3 py-1 md:hidden" data-menu-toggle>Menu</button>
+        <ul class="hidden items-center gap-6 text-sm font-medium md:flex">
+          <li><a class="hover:text-amber-700" href="/">Home</a></li>
+          <li><a class="hover:text-amber-700" href="/menu">Menu</a></li>
+          <li><a class="text-amber-700" href="/about">About</a></li>
+          <li><a class="hover:text-amber-700" href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hidden border-t border-stone-200 bg-white md:hidden" data-mobile-menu>
+        <a class="block px-4 py-3 font-medium" href="/">Home</a>
+        <a class="block px-4 py-3 font-medium" href="/menu">Menu</a>
+        <a class="block px-4 py-3 font-medium text-amber-700" href="/about">About</a>
+        <a class="block px-4 py-3 font-medium" href="/contact">Contact</a>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-14 md:px-6">
+      <section class="grid items-center gap-8 md:grid-cols-2">
+        <div>
+          <h1 class="mb-4 text-4xl font-black">Our Story</h1>
+          <p class="mb-4 text-stone-700">Olive & Ember began as a family kitchen table idea: bring together soulful recipes, seasonal ingredients, and cozy hospitality.</p>
+          <p class="text-stone-700">Every dish is prepared from scratch, inspired by Mediterranean traditions and crafted for modern tastes.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" alt="Dining area" class="rounded-2xl object-cover shadow-lg" />
+      </section>
+
+      <section class="mt-14 grid gap-6 md:grid-cols-3">
+        <article class="story-card overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80" alt="Fresh ingredients" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h2 class="mb-2 font-semibold">Fresh Ingredients</h2>
+            <p class="text-sm text-stone-600">We source produce from local farms and trusted suppliers daily.</p>
+          </div>
+        </article>
+        <article class="story-card overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=80" alt="Chef preparing food" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h2 class="mb-2 font-semibold">Crafted by Chefs</h2>
+            <p class="text-sm text-stone-600">Our kitchen team blends tradition and technique in every plate.</p>
+          </div>
+        </article>
+        <article class="story-card overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
+          <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80" alt="Friends dining" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h2 class="mb-2 font-semibold">Warm Atmosphere</h2>
+            <p class="text-sm text-stone-600">Designed to make every lunch and dinner feel special.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="/js/site.js"></script>
+  </body>
+</html>
